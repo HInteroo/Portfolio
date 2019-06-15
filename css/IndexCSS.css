@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 5;
+}
+html {
+	background-color: white;
+	color: white;
+
+}
+/* Max Juarez/My name Logo - CSS*/
+#myName{
+	float: left;
+	margin-top: 45px;
+	font-size: 28px;
+	font-weight: bold;
+	margin-left: 60px;
+	color: white;
+	transition: all .25s;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: .2px;
+	-webkit-text-stroke-color: black;
+}
+/* Section GreatestNerd - CSS*/
+.Title{
+	position: absolute;
+	top: 30%;
+	/* left: 40%; */
+	font-weight: bold;
+	font-family: Playfair Display;
+	color:white;
+	font-size: 45px;
+}
+.RedName{
+	position: absolute;
+	top: 40%;
+	/* left: 40%; */
+	right: 10%;
+	font-weight: bold;
+	font-family: Playfair Display;
+	color:white;
+	font-size: 45px;	color: #540202;
+}
+@media only screen and (min-width: 855px) {
+	.Title{
+		left: 40%;
+	}
+	.RedName{
+		left: 40%;
+	}
+}
+@media only screen and (max-width: 854px) {
+	.Title{
+		left: 25%;
+
+	}
+	.RedName{
+		left: 25%;
+	}
+}
+#GreatestNerd{
+	background-image:
+	linear-gradient(
+          rgba(0, 0, 0, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+				url(../Images/Coffee.jpg);
+	background-size:cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: 40vh;
+	padding: 90vh 0% 5% 1%;
+}
+/* Section GreatestNerd - CSS*/

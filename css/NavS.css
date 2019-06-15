@@ -1,0 +1,137 @@
+/* Navigation - CSS*/
+nav{
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	z-index: 9999;
+}
+/* Hidden/toggled Navigation - CSS*/
+.HiddenNav{
+	height: 100%;
+	width: 100%;
+display: inline-block;}
+.HiddenContent{
+	position: fixed;
+	background-color: #050c1c;
+	height: 100%;
+	width: 100%;
+}
+.HiddenContent p{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 6vh;
+	margin-Bottom: 20px !important;
+	text-decoration: none;
+	animation: NavPAnimation 1s;
+	animation-fill-mode: both;
+}
+#Seperation{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin-left: -50px;
+	height: 1.5px;
+	width: 100px;
+	border-radius: 25px;
+	background: linear-gradient(to bottom, #3366ff 0%, #009933 100%);
+}
+.NavAnimationClose{
+	-webkit-animation-name: CircleClose; /* Safari 4.0 - 8.0 */
+	animation-duration: 1s;
+  animation-name: CircleClose;
+  animation-duration: 1s;
+}
+
+.NavAnimationOpen{
+	-webkit-animation-name: CircleOpen; /* Safari 4.0 - 8.0 */
+	animation-duration: 0.5s;
+  animation-name: CircleOpen;
+  animation-duration: 0.5s;
+}
+
+.HiddenContent p:nth-child(1) { animation-delay: .2s }
+.HiddenContent p:nth-child(2) { animation-delay: .4s }
+.HiddenContent p:nth-child(3) { animation-delay: .6s }
+#navicon{
+	float: right;
+	margin-top: 45px;
+	display: inline-block;
+	margin-right: 40px;
+	transition: all .25s;
+	width: 35px;
+	height: 30px;
+}
+#navicon:hover{
+	transition: 0.25s;
+	cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+	width:28px;
+	height:3px;
+	background-color: white;
+	margin:4px;
+	transition: all 0.25s;
+}
+
+.navtoggle ul{
+	clear:both;
+	display: inline;
+}
+.navtoggle #navicon{
+	transition: all 0.25s;
+
+}
+.navtoggle .bar1{
+	/* right: 5%; */
+ -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.navtoggle .bar2 {
+	width: 0;
+}
+
+.navtoggle .bar3 {
+	/* right: 5%; */
+    -webkit-transform: rotate(45deg) translate(-3px, -3px);
+    transform: rotate(45deg) translate(-3px, -3px);
+}
+
+@keyframes NavPAnimation {
+	0%{
+		margin-left: -200%;
+	}
+	100%{
+		margin-left: 0;
+
+	}
+}
+@keyframes CircleOpen {
+	0%{
+		height: 1000%;
+		width: 1000%;
+		margin-top:25px;
+		right: 2%;
+		border-radius: 9999px;
+	}
+	100%{
+		right: 0%;
+		height: 100%;
+		width: 100%;
+	}
+}
+@keyframes CircleClose {
+	0%{
+		right: 0%;
+		height: 100%;
+		width: 100%;
+	}
+	100%{
+		height: 1000%;
+		width: 1000%;
+		margin-top:25px;
+		right: 2%;
+		border-radius: 9999px;
+	}
+}
+/* Hidden/toggled Navigation Ends Here - CSS*/
