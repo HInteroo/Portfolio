@@ -5,7 +5,9 @@
 html {
 	background-color: white;
 	color: white;
-
+}
+body{
+	/* font-family: Muli,sans-serif; */
 }
 /* Max Juarez/My name Logo - CSS*/
 #myName{
@@ -24,37 +26,43 @@ html {
 .Title{
 	position: absolute;
 	top: 30%;
-	/* left: 40%; */
 	font-weight: bold;
-	font-family: Playfair Display;
 	color:white;
-	font-size: 45px;
+	font-size: 38px;
 }
-.RedName{
+.SubTitle{
 	position: absolute;
 	top: 40%;
-	/* left: 40%; */
-	right: 10%;
 	font-weight: bold;
-	font-family: Playfair Display;
 	color:white;
-	font-size: 45px;	color: #540202;
+	font-size: 20px;
+	/* border:2px solid red; */
+}
+.SubTitle:before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left:-25px;
+	top: -30%;
+	border-top: 2px solid darkRed;
+	width: 50px;
 }
 @media only screen and (min-width: 855px) {
 	.Title{
-		left: 40%;
+		left: 25%;
+		font-size: 45px;
 	}
-	.RedName{
-		left: 40%;
+	.SubTitle{
+		left: 45%;
 	}
 }
 @media only screen and (max-width: 854px) {
 	.Title{
-		left: 25%;
-
+		left: 15%;
+		font-size: 30px;
 	}
-	.RedName{
-		left: 25%;
+	.SubTitle{
+		left: 30%;
 	}
 }
 #GreatestNerd{
@@ -67,7 +75,93 @@ html {
 	background-size:cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	height: 40vh;
-	padding: 90vh 0% 5% 1%;
+	height:100vh;
 }
-/* Section GreatestNerd - CSS*/
+/* ------------------------------------------------------- */
+#AboutMeSection{
+	height:90vh;
+	width: 100%;
+}
+#AboutMeTitle{
+	text-align: center;
+	margin-top: 90px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: .2em;
+	margin-left: 90px;
+}
+#AboutMeSection h2{
+	font-weight: 900;
+	margin-left: 50px;
+}
+
+#AboutMeSection p{
+	margin-top: 20px;
+	margin-left: 50px;
+	font-size: 1.5vw;
+
+}
+@media only screen and (min-width: 768px) {
+	#AboutMeSection p{
+		font-size: 1.8vw;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#AboutMeSection p{
+		font-size: 2.5vw;
+	}
+}
+#AboutMeSection #line{
+	position: absolute;
+	width: 25px;
+	background:#313030;
+	margin-top: 5px;
+	border-bottom:2px solid #313030;
+}
+
+#BWNYC{
+	background-image:
+	linear-gradient(
+					rgba(0, 0, 0, 0.1),
+					rgba(0, 0, 0, 0.1)
+				),
+				url(../Images/BWNY.jpg);
+	background-size:cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	margin-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+	#BWNYC{
+		height:80vh;
+		margin-right: 40px;
+	}
+	#SmallBGPicture{
+		float: right;
+	}
+	#AboutMe{
+		float: left;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#BWNYC{
+
+		height:20vh;
+	}
+}
+/*------------------------------------------------------------------*/
+#MySkillsSection{
+	height:100vh;
+	/* margin-top: 130px; */
+	background-color: #0c2244;
+}
+#MySkillsSection #AboutMeTitle{
+	color: white;
+}
+#MySkillsSection #line{
+	position: absolute;
+	width: 25px;
+	background:#313030;
+	margin-top: 5px;
+	border-bottom:2px solid white;
+}
