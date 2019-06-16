@@ -6,35 +6,123 @@ nav{
 	z-index: 9999;
 }
 /* Hidden/toggled Navigation - CSS*/
-.HiddenNav{
-	height: 100%;
-	width: 100%;
-display: inline-block;}
+
 .HiddenContent{
 	position: fixed;
-	background-color: #050c1c;
+	background-color: #161815;
 	height: 100%;
-	width: 100%;
+	transition: all 0.5s;
+	background-image:
+	linear-gradient(
+					rgba(0, 0, 0, 0.3),
+					rgba(0, 0, 0, 0.3)
+				),
+				url(../Images/WhiteBlack.jpg);
+	background-size:cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+@media only screen and (min-width: 855px) {
+	.HiddenContent{
+		width: 250px;
+	}
+	.HiddenContent p{
+		font-size: 3vh;
+	}
+	@keyframes CircleOpen {
+		0%{
+			height: 1000%;
+			width: 1000%;
+			margin-top:25px;
+			margin-left: -1000%;
+			left: 2%;
+			border-radius: 9999px;
+		}
+		100%{
+			left: 0%;
+			height: 100%;
+			width: 250px;
+		}
+	}
+	@keyframes CircleClose {
+		0%{
+			left: 0%;
+			height: 100%;
+			width: 250px;;
+		}
+		100%{
+			height: 1000%;
+			width: 1000%;
+			margin-top:25px;
+			margin-left: -1000%;
+			left: 2%;
+			border-radius: 9999px;
+		}
+	}
+}
+@media only screen and (max-width: 854px) {
+	.HiddenContent{
+		width: 100%;
+	}
+	.HiddenContent p{
+		font-size: 6vh;
+	}
+	@keyframes CircleOpen {
+		0%{
+			height: 1000%;
+			width: 1000%;
+			margin-top:25px;
+			margin-left: -1000%;
+			left: 2%;
+			border-radius: 9999px;
+		}
+		100%{
+			left: 0%;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	@keyframes CircleClose {
+		0%{
+			left: 0%;
+			height: 100%;
+			width: 100%;
+		}
+		100%{
+			height: 1000%;
+			width: 1000%;
+			margin-top:25px;
+			margin-left: -1000%;
+			left: 2%;
+			border-radius: 9999px;
+		}
+	}
 }
 .HiddenContent p{
 	text-align: center;
-	color: white;
 	font-weight: bold;
-	font-size: 6vh;
 	margin-Bottom: 20px !important;
 	text-decoration: none;
 	animation: NavPAnimation 1s;
 	animation-fill-mode: both;
 }
-#Seperation{
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	margin-left: -50px;
-	height: 1.5px;
-	width: 100px;
-	border-radius: 25px;
-	background: linear-gradient(to bottom, #3366ff 0%, #009933 100%);
+.HiddenContent a{
+	color: white !important;
+	text-decoration: none !important;
+	outline: none;
+	transition: all 0.5s;
+}
+.HiddenContent a:hover{
+	color: #b7fff0 !important;
+}
+
+#ContactMe{
+
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		margin-left: -40px;
 }
 .NavAnimationClose{
 	-webkit-animation-name: CircleClose; /* Safari 4.0 - 8.0 */
@@ -57,7 +145,7 @@ display: inline-block;}
 	float: right;
 	margin-top: 45px;
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 50px;
 	transition: all .25s;
 	width: 35px;
 	height: 30px;
@@ -74,10 +162,6 @@ display: inline-block;}
 	transition: all 0.25s;
 }
 
-.navtoggle ul{
-	clear:both;
-	display: inline;
-}
 .navtoggle #navicon{
 	transition: all 0.25s;
 
@@ -92,7 +176,6 @@ display: inline-block;}
 }
 
 .navtoggle .bar3 {
-	/* right: 5%; */
     -webkit-transform: rotate(45deg) translate(-3px, -3px);
     transform: rotate(45deg) translate(-3px, -3px);
 }
@@ -104,34 +187,6 @@ display: inline-block;}
 	100%{
 		margin-left: 0;
 
-	}
-}
-@keyframes CircleOpen {
-	0%{
-		height: 1000%;
-		width: 1000%;
-		margin-top:25px;
-		right: 2%;
-		border-radius: 9999px;
-	}
-	100%{
-		right: 0%;
-		height: 100%;
-		width: 100%;
-	}
-}
-@keyframes CircleClose {
-	0%{
-		right: 0%;
-		height: 100%;
-		width: 100%;
-	}
-	100%{
-		height: 1000%;
-		width: 1000%;
-		margin-top:25px;
-		right: 2%;
-		border-radius: 9999px;
 	}
 }
 /* Hidden/toggled Navigation Ends Here - CSS*/
