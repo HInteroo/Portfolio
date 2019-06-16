@@ -8,18 +8,12 @@
 	<link rel="stylesheet" href="css/NavS.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="Javascript/jquery.min.js"></script>
-  <script async type="text/javascript" src="Javascript/JSFunctions.js"></script>
+  <script async type="text/javascript" src="javascript/JSFunctions.js"></script>
 
 </head>
 <body>
 
-
-
-
-
-
-	<a href="#Home"></a>
-	<nav id="nav">
+ 	<nav id="nav">
 		<p id="myName">Max Juarez</p>
 		<div id="navicon"onclick="toggleNav();">
 			<div class="bar1"></div>
@@ -28,24 +22,42 @@
 		</div>
 	</nav>
 	<div class = "modal HiddenNav">
+		<!-- <a href="#Home"></a> -->
+
 			<div class="HiddenContent" style="color: white;">
-				<p style="margin-top:100px;">assd</p>
-				<p>asdddd</p>
-				<p>asddddddd</p>
-				<div id="Seperation"></div>
+				<p style="margin-top:100px;"><a href="#GreatestNerd">Home</a></p>
+				<p><a href="#AboutMeSection">About Me</a></p>
+				<p><a href="#MySkillsSection">Programming Skills</a></p>
+				<div id="ContactMe">
+					<a href="https://github.com/HInteroo"><img width ="34" height = "35" src="Images/GitHubLogo.png"></a>
+					<a style="margin-left:10px;"href="https://www.linkedin.com/in/max-juarez69/"><img width ="34" height = "35" src="Images/LinkedInLogo.png"></a>
+				</div>
 			</div>
 		</div>
 
-
-
-
-
-
 	<header id="GreatestNerd">
-		<h2 class="Title">Hi, my name is</h1>
-		<h2 class="RedName">Max Juarez</h2>
+		<h2 class="Title">Hi, my name is <span style="color:DarkRed;">Max Juarez</span></h1>
+		<h2 class="SubTitle">A Programmer</h2>
 	</header>
 
+<section id="AboutMeSection">
+	<div id="SmallBGPicture"class="container col-sm-6">
+		<div id= "BWNYC"></div>
+	</div>
+	<div id="AboutMe"class="container col-sm-6">
+		<a href="#AboutME"></a>
+		<h1 id="AboutMeTitle">About Me <span id="line"></span> <span style="margin-left:37px;">06/25/96</span></h1>
+		<h2>A Software Developer & Web Developer enthusiast</h2>
+		<p>My name is <Span style="color:darkRed; font-weight:bold;">Max Steven Juarez</span>, born in June 25, 1996. I was born and raised in New York City.</p>
+		<p>I love learning new things, new programming languages and polishing my programming languages skills.</p>
+		<p>Currently in look for an entry-level job or internship that will allow me to grow my skills and better understand my languages to an expert level.</p>
+	</div>
+</section>
+<section id="MySkillsSection">
+	<div id="MySkill"class="container col-sm-6">
+		<h1 id="AboutMeTitle">My Skills as of <span id="line"></span> <span style="margin-left:37px;">06/15/19</span></h1>
+	</div>
+</section>
 <main>
 	<!-- <section id = "Why">
 	</section> -->
