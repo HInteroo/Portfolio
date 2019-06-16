@@ -53,29 +53,23 @@ $(window).scroll(function(e){
 	 					'margin-top' : '45px',
 	 					'font-size' : '28px'
 	 				 });
-				/* margin-top: 20px;
-				font-size: 20px;
-				font-weight: bold;
-				margin-left: 40px;
-				color: black;
-				-webkit-text-fill-color: white;
-				-webkit-text-stroke-width: 1px;
-				-webkit-text-stroke-color: black; */
 			}
+			// else if ($(this).scrollTop() < $("#navicon").){
+			// 		$("#navicon").css({
+			// 			'margin-top' : '45px',
+			// 		 });
+			// 		 $("#myName").css({
+			// 			 'margin-top' : '45px',
+			// 			 'font-size' : '28px'
+			// 			});
+			//  }
+			//  else if ($(this).scrollTop() < 60){
+			// 		 $("#navicon").css({
+			// 			 'margin-top' : '45px',
+			// 			});
+			// 			$("#myName").css({
+			// 				'margin-top' : '45px',
+			// 				'font-size' : '28px'
+			// 			 });
+			// 	}
 });
-// $(document).ready(function(){
-//   var topOffsetOfBtns = $('nav').offset().top;       // get initial position of the element
-//   var temp = topOffsetOfBtns;
-//   var lastWidth = $(window).width();
-//
-//   $(window).scroll(function(){  //767-991 the topOffsetOfBtns changes to 871 otherwise 809
-// 		var bottom = $(window).offset().top;
-// 		alert(bottom);
-// 		 // if($(window).width()!=lastWidth && $(window).width()>767 && $(window).width()<992){
-//      //   topOffsetOfBtns = 811;
-//      // }
-//      // else{
-//      //   topOffsetOfBtns = 749;
-//      // }
-//   });
-// });
