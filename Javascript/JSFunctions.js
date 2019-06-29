@@ -47,29 +47,11 @@ $(window).scroll(function(e){
 			 }
 		 else if ($(this).scrollTop() < 60){
 	 			 $("#navicon").css({
-					 'margin-top' : '45px',
+					 'margin-top' : '45px'
 	 			  });
 	 				$("#myName").css({
 	 					'margin-top' : '45px',
 	 					'font-size' : '28px'
 	 				 });
 			}
-			// else if ($(this).scrollTop() < $("#navicon").){
-			// 		$("#navicon").css({
-			// 			'margin-top' : '45px',
-			// 		 });
-			// 		 $("#myName").css({
-			// 			 'margin-top' : '45px',
-			// 			 'font-size' : '28px'
-			// 			});
-			//  }
-			//  else if ($(this).scrollTop() < 60){
-			// 		 $("#navicon").css({
-			// 			 'margin-top' : '45px',
-			// 			});
-			// 			$("#myName").css({
-			// 				'margin-top' : '45px',
-			// 				'font-size' : '28px'
-			// 			 });
-			// 	}
 });
