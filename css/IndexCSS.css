@@ -10,7 +10,7 @@ body{
 	/* font-family: Muli,sans-serif; */
 }
 /* Max Juarez/My name Logo - CSS*/
-#myName{
+/* #myName{
 	float: left;
 	margin-top: 45px;
 	font-size: 28px;
@@ -21,7 +21,8 @@ body{
 	-webkit-text-fill-color: white;
 	-webkit-text-stroke-width: .2px;
 	-webkit-text-stroke-color: black;
-}
+} */
+
 /* Section GreatestNerd - CSS*/
 .Title{
 	position: absolute;
@@ -48,6 +49,19 @@ body{
 	width: 50px;
 }
 @media only screen and (min-width: 855px) {
+
+	#myName{
+		float: left;
+		margin-top: 45px;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 60px;
+		color: white;
+		transition: all .25s;
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke-width: .2px;
+		-webkit-text-stroke-color: black;
+	}
 	.Title{
 		left: 25%;
 		font-size: 45px;
@@ -62,8 +76,22 @@ body{
 		font-size: 30px;
 	}
 	.SubTitle{
+		margin-top: 50px;
 		left: 30%;
 	}
+	#myName{
+		float: left;
+		margin-top: 45px;
+		font-size: 20px;
+		font-weight: bold;
+		margin-left: 60px;
+		color: white;
+		transition: all .25s;
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke-width: .2px;
+		-webkit-text-stroke-color: black;
+	}
+
 }
 #GreatestNerd{
 	background-image:
@@ -79,7 +107,7 @@ body{
 }
 /* ------------------------------------------------------- */
 #AboutMeSection{
-	height:90vh;
+	height:600px;
 	width: 100%;
 }
 #AboutMeTitle{
