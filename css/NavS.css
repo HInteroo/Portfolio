@@ -1,7 +1,7 @@
 /* Navigation - CSS*/
 nav{
 	position: fixed;
-	height: 100px;
+	height: 75px;
 	width: 100%;
 	z-index: 9999;
 }
@@ -23,12 +23,21 @@ nav{
 	background-repeat: no-repeat;
 	height:100%;
 }
-@media only screen and (min-width: 855px) {
+#myNameFixed{
+	transition: all 0.5s;
+	top: 8%;
+	position: absolute;
+}
+@media only screen and (min-width: 600px) {
 	.HiddenContent{
 		width: 250px;
 	}
+	#myNameFixed{
+		left: 22%;
+		font-size: 25px;
+	}
 	.HiddenContent p{
-		font-size: 3vh;
+		font-size: 2.5vh;
 	}
 	@keyframes CircleOpen {
 		0%{
@@ -61,12 +70,17 @@ nav{
 		}
 	}
 }
-@media only screen and (max-width: 854px) {
+@media only screen and (max-width: 600px) {
 	.HiddenContent{
+		overflow:hidden;
 		width: 100%;
 	}
+	#myNameFixed{
+		left: 35%;
+		font-size: 5vw;
+	}
 	.HiddenContent p{
-		font-size: 6vh;
+		font-size: 5vw;
 	}
 	@keyframes CircleOpen {
 		0%{
