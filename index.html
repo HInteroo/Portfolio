@@ -14,17 +14,18 @@
 <body>
 
  	<nav id="nav">
-		<p id="myName">Max Juarez</p>
 		<div id="navicon"onclick="toggleNav();">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 			<div class="bar3"></div>
 		</div>
 	</nav>
+	<p id="myName">Max Juarez</p>
 	<div class = "modal HiddenNav">
 		<!-- <a href="#Home"></a> -->
 
 			<div class="HiddenContent" style="color: white;">
+				<p id="myNameFixed">Max Juarez</p>
 				<p style="margin-top:100px;"><a href="#GreatestNerd">Home</a></p>
 				<p><a href="#AboutMeSection">About Me</a></p>
 				<p><a href="#MySkillsSection">Programming Skills</a></p>
@@ -36,7 +37,7 @@
 		</div>
 
 	<header id="GreatestNerd">
-		<h2 class="Title">Hi, my name is <span style="color:DarkRed;">Max Juarez</span></h1>
+		<h2 class="Title">Hi, my name is <span style="color:DarkRed;">Max <span id="lastName">Juarez</span></span></h1>
 		<h2 class="SubTitle">A Programmer</h2>
 	</header>
 
@@ -54,9 +55,54 @@
 	</div>
 </section>
 <section id="MySkillsSection">
-	<div id="MySkill"class="container col-sm-6">
-		<h1 id="AboutMeTitle">My Skills as of <span id="line"></span> <span style="margin-left:37px;">06/15/19</span></h1>
-	</div>
+	<div id="MySkill"class="container" style="background:white;">
+		<h1>My Skills</h1>
+			<div class="col-xs-6 col-sm-3">
+					<div class="Circle">
+					<img src= "Images/Coding.png"/>
+					<div class="description">
+							<p class="imgHeader"> Learning </p>
+							<p class="imgSentence">I'm a fast learner. Developing my skills to perfection!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+					<div class="Circle">
+					<img src= "Images/gamepad.png"/>
+					<div class="description">
+							<p class="imgHeader"> Gaming </p>
+							<p class="imgSentence">I love video games! What i also love is learning how to program mini-games on my free time!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+					<div class="Circle">
+					<img src= "Images/html-coding.png"/>
+					<div class="description">
+							<p class="imgHeader"> Front-End Development</p>
+							<p class="imgSentence">A year of HTML, CSS, Javascript & JQuery experience</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="Circle">
+						<img id="Java"src= "Images/java.png"/>
+						<div class="description">
+							<p class="imgHeader"> Software Engineer </p>
+							<p class="imgSentence">I have 4 years of Java experience. Interested in being a Software Engineer</p>
+						</div>
+				</div>
+			</div>
+		</div>
+</section>
+<section id="Footer" style="color:white;">
+	<h2 style="text-align:center; padding-top:20px;">Get to know me a bit more!</h2>
+	<ul>
+		<li>Linked</li>
+		<li>Github</li>
+		<li>Facebook</li>
+		<li>Instagram</li>
+	</ul>
 </section>
 <main>
 	<!-- <section id = "Why">
