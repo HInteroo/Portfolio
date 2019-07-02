@@ -10,9 +10,11 @@ function toggleNav(){
 		var nav = document.getElementById("nav");
 		nav.classList.toggle("navtoggle");
 		if (showed) {
+			$("body").css({
+				'overflow':'visible'
+			});
 			$(".HiddenContent").removeClass("NavAnimationOpen");
 			$(".HiddenContent").addClass("NavAnimationClose");
-			$(".bar1, .bar2, .bar3").css("background-color", "white");
 			setTimeout(function() {
 						$(".HiddenNav").hide();
 					}, 700);
@@ -21,37 +23,40 @@ function toggleNav(){
 				currentlyAnimating = false;
 			}, 1000);		}
 		else {
-			$(".HiddenNav").show();
+			if ($(window).width() <= 699) {
+				$("body").css({
+					'overflow':'hidden'
+				});
+			}
 			$(".HiddenContent").removeClass("NavAnimationClose");
+			$(".HiddenNav").show();
 			$(".HiddenContent").addClass("NavAnimationOpen");
-			setTimeout(function() {
-				$(".bar1, .bar2, .bar3").css("background-color", "white");
-			}, 550);
 			setTimeout(function() {
 				currentlyAnimating = false;
 			}, 1000);
 			showed = true;
 		}
 }
-
-$(window).scroll(function(e){
-
-		if ($(this).scrollTop() > 60){
-			 $("#navicon").css({
-				 'margin-top' : '30px'
-			  });
-				$("#myName").css({
-					'margin-top' : '30px',
-					'font-size' : '24px'
-				 });
+ $(window).resize(function(){
+	 if ($(window).width() <= 699 && showed) {
+		 $("body").css({
+			 'overflow':'hidden'
+		 });
+	 }
+		 else {
+			 $("body").css({
+				 'overflow':'visible'
+			 });
+		 }
+ })
+$(window).scroll(function(e){//#myName .bar1, .bar2, .bar3 bg white
+		if (($(this).scrollTop() > $("#AboutMeSection").offset().top - 70)){
+			 $("#myNameFixed").css('color','#8B6177');
+			 $(".bar1, .bar2, .bar3").css("background-color", "#8B6177");
 			 }
-		 else if ($(this).scrollTop() < 60){
-	 			 $("#navicon").css({
-					 'margin-top' : '45px'
-	 			  });
-	 				$("#myName").css({
-	 					'margin-top' : '45px',
-	 					'font-size' : '28px'
-	 				 });
-			}
+		else {
+			$("#myNameFixed").css('color','white');
+			$(".bar1, .bar2, .bar3").css("background-color", "white");
+		}
+
 });
