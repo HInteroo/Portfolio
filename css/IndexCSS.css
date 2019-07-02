@@ -2,26 +2,13 @@
 	margin: 0;
 	padding: 5;
 }
-html {
+html,body {
 	background-color: white;
 	color: white;
+	height:100%;
+	width: 100%;
+  -webkit-font-smoothing:antialiased !important;
 }
-body{
-	/* font-family: Muli,sans-serif; */
-}
-/* Max Juarez/My name Logo - CSS*/
-/* #myName{
-	float: left;
-	margin-top: 45px;
-	font-size: 28px;
-	font-weight: bold;
-	margin-left: 60px;
-	color: white;
-	transition: all .25s;
-	-webkit-text-fill-color: white;
-	-webkit-text-stroke-width: .2px;
-	-webkit-text-stroke-color: black;
-} */
 
 /* Section GreatestNerd - CSS*/
 .Title{
@@ -29,15 +16,15 @@ body{
 	top: 30%;
 	font-weight: bold;
 	color:white;
-	font-size: 38px;
+	font-size: 5vw;
+	left: 20%;
+
 }
 .SubTitle{
 	position: absolute;
-	top: 40%;
 	font-weight: bold;
 	color:white;
-	font-size: 20px;
-	/* border:2px solid red; */
+	font-size: 4vw;
 }
 .SubTitle:before{
 	content: "";
@@ -48,50 +35,57 @@ body{
 	border-top: 2px solid darkRed;
 	width: 50px;
 }
-@media only screen and (min-width: 855px) {
-
+#myName{
+	color: White;
+}
+@media only screen and (min-width: 855px)  {
 	#myName{
 		float: left;
 		margin-top: 45px;
-		font-size: 28px;
+		font-size: 24px;
 		font-weight: bold;
-		margin-left: 60px;
-		color: white;
+		margin-left: 50px;
 		transition: all .25s;
-		-webkit-text-fill-color: white;
-		-webkit-text-stroke-width: .2px;
-		-webkit-text-stroke-color: black;
-	}
-	.Title{
-		left: 25%;
-		font-size: 45px;
 	}
 	.SubTitle{
-		left: 45%;
+		left: 30%;
+		top: 48%;
 	}
 }
-@media only screen and (max-width: 854px) {
-	.Title{
-		left: 15%;
-		font-size: 30px;
-	}
+@media only screen and (max-width: 854px) and (min-width: 466px)  {
 	.SubTitle{
-		margin-top: 50px;
 		left: 30%;
+		top: 44%;
+
 	}
 	#myName{
 		float: left;
 		margin-top: 45px;
 		font-size: 20px;
 		font-weight: bold;
-		margin-left: 60px;
-		color: white;
+		margin-left: 50px;
 		transition: all .25s;
-		-webkit-text-fill-color: white;
-		-webkit-text-stroke-width: .2px;
-		-webkit-text-stroke-color: black;
 	}
 
+}
+@media only screen and (max-width: 466px){
+
+	.SubTitle{
+		left: 30%;
+		top: 40%;
+	}
+	.Title{
+		margin-left: -40px;
+		font-size: 25px;
+	}
+	#myName{
+		float: left;
+		margin-top: 45px;
+		font-size: 18px;
+		font-weight: bold;
+		margin-left: 50px;
+		transition: all .25s;
+	}
 }
 #GreatestNerd{
 	background-image:
@@ -105,9 +99,22 @@ body{
 	background-repeat: no-repeat;
 	height:100vh;
 }
+@media only screen and (max-width: 439px){
+
+	#lastName{
+		margin-left: 25%;
+	}
+	.Title{
+		font-size: 28px;
+	}
+	.SubTitle{
+		left: 30%;
+		top: 45%;
+	}
+}
 /* ------------------------------------------------------- */
 #AboutMeSection{
-	height:600px;
+	height:570px;
 	width: 100%;
 }
 #AboutMeTitle{
@@ -116,16 +123,21 @@ body{
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: .2em;
-	margin-left: 90px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 #AboutMeSection h2{
 	font-weight: 900;
-	margin-left: 50px;
+	margin-left: 35px;
+	margin-right: 35px;
+
 }
 
 #AboutMeSection p{
 	margin-top: 20px;
-	margin-left: 50px;
+	margin-left: 35px;
+	margin-right: 35px;
+
 	font-size: 1.5vw;
 
 }
@@ -179,17 +191,99 @@ body{
 }
 /*------------------------------------------------------------------*/
 #MySkillsSection{
-	height:100vh;
-	/* margin-top: 130px; */
-	background-color: #0c2244;
+	height:auto;
+	width: auto;
 }
-#MySkillsSection #AboutMeTitle{
-	color: white;
+#MySkillsSection h1{
+	text-align: center;
+	margin-top: 90px;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: .2em;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: #193540;
+	padding-bottom: 50px;
 }
-#MySkillsSection #line{
+#MySkillsSection h1::before{
+	content: "";
 	position: absolute;
-	width: 25px;
-	background:#313030;
-	margin-top: 5px;
-	border-bottom:2px solid white;
+	height: 2px;
+	width: 80px;
+	margin-left: 40px;
+	margin-top: 50px;
+	background: #2F4953;
 }
+#MySkillsSection .Circle{
+	background-color: #D85469;
+	margin-left: 20%;
+	height: 80px;
+	width: 80px;
+	border-radius: 120px;
+	margin-bottom: 200px;
+}
+
+#MySkillsSection img{
+	margin-left: 8px;
+	margin-top: 7px;
+	height: 65px;
+}
+#MySkillsSection .Circle::before{
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 40px;
+	margin-left: 22px;
+	margin-top: 100px;
+	background: #D85469;
+}
+#MySkillsSection .description{
+	width: 170px;
+	height: 170px;
+	margin-left: -45px;
+	margin-top: 40px;
+}
+
+#MySkillsSection #Java{
+	height: 80px !important;
+	margin-left: 2px !important;
+	margin-top: 0px !important;
+}
+@media only screen and (min-width: 600px){
+	#MySkillsSection .imgHeader{
+		text-align: center;
+		font-weight: bold;
+		color: #6d6d6d;
+		font-size: 18px;
+	}
+	#MySkillsSection .imgSentence{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 599px){
+	#MySkillsSection .imgHeader{
+		text-align: center;
+		font-weight: bold;
+		color: #6d6d6d;
+		font-size: 18px;
+	}
+	#MySkillsSection .imgSentence{
+		font-size: 12px;
+	}
+}
+/*---------------------------Footer CSS-------------------------------*/
+#Footer{
+	height:200px;
+	width: 100%;
+	background-color: #26262a;
+	font-family: adobe-garamond-pro;
+	justify-content: center;
+}
+
+#Footer ul li{
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 20px;
+	/* max-width: 800px; */
+	}
