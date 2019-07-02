@@ -238,7 +238,6 @@ html,body {
 	background: #D85469;
 }
 #MySkillsSection .description{
-	width: 170px;
 	height: 170px;
 	margin-left: -45px;
 	margin-top: 40px;
@@ -250,6 +249,9 @@ html,body {
 	margin-top: 0px !important;
 }
 @media only screen and (min-width: 600px){
+	#MySkillsSection .description{
+		width: 160px;
+	}
 	#MySkillsSection .imgHeader{
 		text-align: center;
 		font-weight: bold;
@@ -261,6 +263,9 @@ html,body {
 	}
 }
 @media only screen and (max-width: 599px){
+	#MySkillsSection .description{
+		width: 150px;
+	}
 	#MySkillsSection .imgHeader{
 		text-align: center;
 		font-weight: bold;
