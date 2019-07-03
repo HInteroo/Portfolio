@@ -87,13 +87,11 @@ nav{
 .HiddenContent a:hover{
 	color: #b7fff0 !important;
 }
-
-#ContactMe{
-
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		margin-left: -40px;
+#HiddenIcon{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	margin-left: -40px;
 }
 .NavAnimationClose{
 	-webkit-animation-name: NavClose; /* Safari 4.0 - 8.0 */
