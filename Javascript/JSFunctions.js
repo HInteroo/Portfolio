@@ -1,15 +1,16 @@
-var showed = false;
+var showedNav = false;
+var showedModal = false;
 var currentlyAnimating = false;
 
 function toggleNav(){
 		if (currentlyAnimating) {
 			return;
 		}
+		$(".bg-modal").hide();
 		currentlyAnimating = true;
-
 		var nav = document.getElementById("nav");
 		nav.classList.toggle("navtoggle");
-		if (showed) {
+		if (showedNav) {
 			$("body").css({
 				'overflow':'visible'
 			});
@@ -18,7 +19,7 @@ function toggleNav(){
 			setTimeout(function() {
 						$(".HiddenNav").hide();
 					}, 700);
-			showed = false;
+			showedNav = false;
 			setTimeout(function() {
 				currentlyAnimating = false;
 			}, 1000);		}
@@ -34,25 +35,45 @@ function toggleNav(){
 			setTimeout(function() {
 				currentlyAnimating = false;
 			}, 1000);
-			showed = true;
+			showedNav = true;
 		}
 }
+function toggleContactModal(){
+	$(".modal-content").removeClass("ModalAnimationClose");
+	$(".modal-content").addClass("ModalAnimationOpen");
+	$('nav').css('z-index','2');
+	$(".bg-modal").show();
+	$("body").css({
+		'overflow':'hidden'
+	});
+}
+function hideModal(){
+	$(".modal-content").removeClass("ModalAnimationOpen");
+	$(".modal-content").addClass("ModalAnimationClose");
+	setTimeout(function() {
+		$(".bg-modal").hide();
+		$('nav').css('z-index','9999');
+		$("body").css({
+			'overflow':'visible'
+		});
+	}, 200);
+}
  $(window).resize(function(){
-	 if ($(window).width() <= 699 && showed) {
-		 $("body").css({
-			 'overflow':'hidden'
-		 });
-	 }
-		 else {
-			 $("body").css({
-				 'overflow':'visible'
-			 });
-		 }
- })
-$(window).scroll(function(e){//#myName .bar1, .bar2, .bar3 bg white
+	 if ($(window).width() <= 699 && showedNav) {
+ 		$("body").css({
+ 			'overflow':'hidden'
+ 		});
+ 	}
+ 		else {
+ 			$("body").css({
+ 				'overflow':'visible'
+ 			});
+ 		}
+	})
+$(window).scroll(function(e){
 		if (($(this).scrollTop() > $("#AboutMeSection").offset().top - 70)){
-			 $("#myNameFixed").css('color','#8B6177');
-			 $(".bar1, .bar2, .bar3").css("background-color", "#8B6177");
+			 $("#myNameFixed").css('color','#4AD295');
+			 $(".bar1, .bar2, .bar3").css("background-color", "#4AD295");
 			 }
 		else {
 			$("#myNameFixed").css('color','white');
