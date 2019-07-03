@@ -10,7 +10,7 @@ nav{
 .HiddenContent{
 	position: fixed;
 	background-color: #161815;
-	height: 100%;
+	height: 100vh;
 	transition: all 0.5s;
 	background-image:
 	linear-gradient(
@@ -50,7 +50,7 @@ nav{
 		font-size: 5vw;
 	}
 	.HiddenContent p{
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 }
 @keyframes NavOpen {
