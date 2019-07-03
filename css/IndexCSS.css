@@ -32,7 +32,7 @@ html,body {
 	left: 50%;
 	margin-left:-25px;
 	top: -30%;
-	border-top: 2px solid darkRed;
+	border-top: 2px solid #4AD295;
 	width: 50px;
 }
 #myName{
@@ -130,25 +130,21 @@ html,body {
 	font-weight: 900;
 	margin-left: 35px;
 	margin-right: 35px;
-
 }
 
 #AboutMeSection p{
 	margin-top: 20px;
 	margin-left: 35px;
 	margin-right: 35px;
-
-	font-size: 1.5vw;
-
 }
 @media only screen and (min-width: 768px) {
 	#AboutMeSection p{
-		font-size: 1.8vw;
+		font-size: 1.9vw;
 	}
 }
 @media only screen and (max-width: 767px) {
 	#AboutMeSection p{
-		font-size: 2.5vw;
+		font-size: 3.2vw;
 	}
 }
 #AboutMeSection #line{
@@ -276,13 +272,224 @@ html,body {
 		font-size: 12px;
 	}
 }
+/*---------------------------ContactMe section CSS-------------------------------*/
+#ContactSection{
+	height:auto;
+	width: auto;
+}
+#ContactMe{
+	height: 250px;
+	width: 100%;
+
+}
+#ContactMe h1{
+	position: absolute;
+	color:#193540;
+	letter-spacing: .1em;
+	left: 50%;
+	font-size: 40px;
+	margin-left:-70px;
+}
+#ContactMe h1::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 80px;
+	margin-left: 20px;
+	margin-top: 60px;
+	background: #2F4953;
+}
+#ContactMe #ContactMeBtn{
+	margin-top: 120px;
+	position: absolute;
+	z-index: 5;
+	right: 50%;
+	margin-right:-100px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background: #D85469;
+	outline: none;
+	border: none;
+	width: 200px;
+	height: 50px;
+	transition: all 0.5s;
+}
+#ContactMe #ContactMeBtn:hover{
+	font-size: 20.5px;
+	transition: all 0.5s;
+	background: #a82047;
+}
+
+@media only screen and (min-width: 531px){
+	.bg-modal{
+		height: 100%;
+		width: 100%;
+		background: #00000080;
+	}
+	#Male{
+		display: none;
+	}
+	.modal-content{
+		transition: all 0.5s;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-left: -225px;
+		margin-top: -185px;
+		height: 370px;
+		width: 450px;
+	}
+
+	.modal-content h3{
+		margin: 40px 0 10px 0;
+	}
+}
+
+@media only screen and (max-width: 530px){
+	.bg-modal{
+		height: 100%;
+		width: 100%;
+	}
+	.modal-content{
+		transition: all 0.5s;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+	.modal-content h3{
+		margin: 40px 0 40px 0;
+	}
+	#Male{
+		width: 100px;
+		height: 100px;
+		margin-left: 40%;
+	}
+
+}
+.ModalAnimationClose{
+	-webkit-animation-name: modalClose; /* Safari 4.0 - 8.0 */
+	animation-duration: 0.3s;
+	animation-name: modalClose;
+	animation-duration: 0.3s;
+}
+
+.ModalAnimationOpen{
+	-webkit-animation-name: modalOpen; /* Safari 4.0 - 8.0 */
+	animation-duration: 0.3s;
+	animation-name: modalOpen;
+	animation-duration: 0.3s;
+}
+
+@keyframes modalOpen {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes modalClose {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.Close{
+	position: absolute;
+	top: 25px;
+	right: 15px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: all 0.5s;
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.Close::before{
+	font-size: 30px;
+	position: absolute;
+	transform:rotate(45deg);
+	font-weight: bold;
+	content: "+";
+	top: -4px;
+	margin-left: 13px;
+}
+.Close:hover{
+	background-color: #EFF7F7;
+}
+#ContactMeParagraph{
+	width: 100%;
+	height: 30px;
+}
+.SubmitAndSave button{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	color: white;
+	background: #D85469;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	left: 50%;
+	margin-left: -50px;
+}
+.modal-content div{
+	margin-top: 5px;
+}
+/* .modal-content #Form { margin-top: 20px} */
+.modal-content input{
+	width: 80%;
+	border: none;
+	outline: none;
+	border-bottom: solid 1px black;
+}
+.modal-content textarea{
+	width: 80%;
+	height: 100px;
+}
+#Name{
+	margin-left: 20px;
+	height: 32px;
+	width: 32px;
+}
+#Email{
+	margin-left: 25px;
+	height: 28px;
+	width: 28px;
+}
+#Text{
+	margin-left: 24px;
+	height: 25px;
+	width: 25px;
+}
+/*---------------------------ContactMe Ends Here-------------------------------*/
+
 /*---------------------------Footer CSS-------------------------------*/
 #Footer{
-	height:200px;
+	height:150px;
 	width: 100%;
 	background-color: #26262a;
 	font-family: adobe-garamond-pro;
 	justify-content: center;
+}
+#Footer h2{
+	margin: 0;
+	padding: 20px 0 20px 0;
+}
+#Footer ul {
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
 }
 
 #Footer ul li{
@@ -290,5 +497,11 @@ html,body {
 	display: inline-block;
 	list-style-type: none;
 	margin-left: 20px;
-	/* max-width: 800px; */
-	}
+}
+#attributeIcon{
+	text-align: center;
+	background: black;
+	height: 35px;
+	color: white;
+	font-size: 10px;
+}
