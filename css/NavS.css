@@ -10,8 +10,8 @@ nav{
 .HiddenContent{
 	position: fixed;
 	background-color: #161815;
-	height: 100vh;
-	transition: all 0.5s;
+	/* min-height: 100vh; */
+	min-height: -webkit-fill-available;
 	background-image:
 	linear-gradient(
 					rgba(0, 0, 0, 0.3),
@@ -21,8 +21,7 @@ nav{
 	background-size:cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	height:100%;
-	overflow:hidden;
+	/* height:100vh; */
 }
 #myNameFixed{
 	transition: all 0.5s;
