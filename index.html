@@ -29,7 +29,7 @@
 				<p style="margin-top:100px;"><a href="#GreatestNerd">Home</a></p>
 				<p><a href="#AboutMeSection">About Me</a></p>
 				<p><a href="#MySkillsSection">Programming Skills</a></p>
-				<div id="ContactMe">
+				<div id="HiddenIcon">
 					<a href="https://github.com/HInteroo"><img width ="34" height = "35" src="Images/GitHubLogo.png"></a>
 					<a style="margin-left:10px;"href="https://www.linkedin.com/in/max-juarez69/"><img width ="34" height = "35" src="Images/LinkedInLogo.png"></a>
 				</div>
@@ -37,9 +37,11 @@
 		</div>
 
 	<header id="GreatestNerd">
-		<h2 class="Title">Hi, my name is <span style="color:DarkRed;">Max <span id="lastName">Juarez</span></span></h1>
+		<h2 class="Title">Hi, my name is <span style="color:#4AD295;">Max <span id="lastName">Juarez</span></span></h1>
 		<h2 class="SubTitle">A Programmer</h2>
 	</header>
+
+
 
 <section id="AboutMeSection">
 	<div id="SmallBGPicture"class="container col-sm-6">
@@ -95,15 +97,77 @@
 			</div>
 		</div>
 </section>
-<section id="Footer" style="color:white;">
-	<h2 style="text-align:center; padding-top:20px;">Get to know me a bit more!</h2>
-	<ul>
-		<li>Linked</li>
-		<li>Github</li>
-		<li>Facebook</li>
-		<li>Instagram</li>
-	</ul>
+<section id ="ContactSection">
+	<div id="ContactMe">
+		<button id="ContactMeBtn" onclick="toggleContactModal();">Contact me</button>
+		<h1>Hello<span style="background:red; border-radius:25px; position:absolute; height:10px; width:10px; right:-15px; bottom:0;" ></span></h1>
+	</div>
+	<div class = "modal bg-modal">
+		<div class = "modal-content" id="LogIn">
+				<h3 style="text-align:center;">Contact Me!</h3>
+					<img id="Male"src = "Images/MaleIcon.png"></img>
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 .col-md-4">
+							<p style = "font-size: 12px; color:darkRed; margin-left:70px;"id="ContactMeParagraph">Note:</p>
+						</div>
+						<div class="col-xs-8 col-sm-8 .col-md-8" >
+								<p style = "padding-right:30px; font-size: 10px;"id="ContactMeParagraph">Unfortanetly, you can't send a message because PHP is not supported on Github. But it'll look something like this!</p>
+						</div>
+					</div>
+
+					<div id="Form">
+					<p class="Close" onclick="hideModal();"></p>
+					<form class="ContactForm" action="max.juarez625@gmail.com" method="post" enctype="text/plain">
+						<div class="row">
+							<div class="col-xs-2 col-sm-2 .col-md-2">
+								<img id="Name"src = "Images/NameIcon.png"></img>
+							</div>
+								<div class="col-xs-10 col-sm-10 .col-md-10" >
+									<input placeholder="Your Name" type="text">
+								</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2 col-sm-2">
+								<img id="Email"src = "Images/EmailIcon.png"></img>
+							</div>
+								<div class="col-xs-10 col-sm-10" >
+									<input type="text" name = "email" required placeholder="Your Email Address">
+									</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2 col-sm-2">
+								<img id="Text" src = "Images/TextIcon.png"></img>
+							</div>
+							<div class="col-xs-10 col-sm-10" >
+							<textarea placeholder="Message"></textarea>
+						</div>
+					</div>
+						<div class="SubmitAndSave">
+							<button type="submit" class="SubmitBtn"> Submit</button>
+						</div>
+					</form>
+				</div>
+		</div>
+	</div>
 </section>
+
+<section id="Footer" style="color:white;">
+	<h2 style="text-align:center;">Get to know me a bit more!</h2>
+	<ul>
+		<li><a href="https://github.com/HInteroo"><img width ="34" height = "35" src="Images/GitHubLogo.png"></a></li>
+		<li><a href="https://www.linkedin.com/in/max-juarez69/"><img width ="34" height = "35" src="Images/LinkedInLogo.png"></a></li>
+		<li><a href="https://github.com/HInteroo"><img width ="34" height = "35" src="Images/GitHubLogo.png"></a></li>
+		<li><a href="https://www.linkedin.com/in/max-juarez69/"><img width ="34" height = "35" src="Images/LinkedInLogo.png"></a></li>
+	</ul>
+
+</section>
+
+
+
+
+
+<div class="col-xs-6 col-sm-6" id="attributeIcon">Icon made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" style="color:#4AD295;"><strong>Vitaly Gorbachev</strong></a> from <a href="http://www.flaticon.com/"style="color:#4AD295;"><strong>www.flaticon.com</strong></a></div>
+<div class="col-xs-6 col-sm-6" id="attributeIcon">Icon made by <a href="https://www.freepik.com/" style="color:#4AD295;"><strong>freepik</strong></a> from <a href="http://www.flaticon.com/"style="color:#4AD295;" ><strong>www.flaticon.com</strong></a></div>
 <main>
 	<!-- <section id = "Why">
 	</section> -->
