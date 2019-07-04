@@ -64,6 +64,8 @@ $(document).ready(function() {
 	$("#GreatestNerd").css('height',''+$(window).height()+'');
 });
  $(window).resize(function(){
+	 $(".HiddenContent").css('height',''+$(window).height()+'');
+	 $("#GreatestNerd").css('height',''+$(window).height()+'');
 	 if ($(window).width() <= 699 && showedNav) {
  		$("body").css({
  			'overflow':'hidden'
