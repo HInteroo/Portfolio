@@ -9,7 +9,6 @@ nav{
 
 .HiddenContent{
 	position: fixed;
-	background-color: #161815;
 	background-image:
 	linear-gradient(
 					rgba(0, 0, 0, 0.3),
@@ -20,6 +19,7 @@ nav{
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	height:100%;
+	background-color:black;
 	overflow:hidden;
 }
 #myNameFixed{
@@ -43,6 +43,7 @@ nav{
 
 	.HiddenContent{
 		width: 100%;
+		background-position: 50% 80%;
 	}
 	#myNameFixed{
 		left: 35%;
