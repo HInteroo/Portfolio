@@ -38,6 +38,7 @@ function toggleNav(){
 			showedNav = true;
 		}
 }
+
 function toggleContactModal(){
 	$(".modal-content").removeClass("ModalAnimationClose");
 	$(".modal-content").addClass("ModalAnimationOpen");
@@ -58,6 +59,10 @@ function hideModal(){
 		});
 	}, 200);
 }
+$(document).ready(function() {
+	$(".HiddenContent").css('height',''+$(window).height()+'');
+	$("#GreatestNerd").css('height',''+$(window).height()+'');
+});
  $(window).resize(function(){
 	 if ($(window).width() <= 699 && showedNav) {
  		$("body").css({
