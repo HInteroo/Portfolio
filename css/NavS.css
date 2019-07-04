@@ -20,6 +20,7 @@ nav{
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	height:100%;
+	overflow:hidden;
 }
 #myNameFixed{
 	transition: all 0.5s;
