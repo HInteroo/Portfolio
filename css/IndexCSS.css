@@ -97,7 +97,7 @@ html,body {
 	background-size:cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	height:100%;
+/* 	height:100%; */
 }
 @media only screen and (max-width: 439px){
 
