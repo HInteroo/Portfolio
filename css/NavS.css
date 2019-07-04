@@ -9,6 +9,8 @@ nav{
 
 .HiddenContent{
 	position: fixed;
+	background-color: #161815;
+	min-height: -webkit-fill-available;
 	background-image:
 	linear-gradient(
 					rgba(0, 0, 0, 0.3),
@@ -16,11 +18,8 @@ nav{
 				),
 				url(../Images/WhiteBlack.jpg);
 	background-size:cover;
-	background-position: 50% 50%;
+	background-position: 50% 80%;
 	background-repeat: no-repeat;
-	height:100%;
-	background-color:black;
-	overflow:hidden;
 }
 #myNameFixed{
 	transition: all 0.5s;
@@ -43,14 +42,13 @@ nav{
 
 	.HiddenContent{
 		width: 100%;
-		background-position: 50% 80%;
 	}
 	#myNameFixed{
 		left: 35%;
 		font-size: 5vw;
 	}
 	.HiddenContent p{
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 }
 @keyframes NavOpen {
@@ -75,14 +73,14 @@ nav{
 	font-weight: bold;
 	margin-Bottom: 20px !important;
 	text-decoration: none;
-	animation: NavPAnimation 1s;
+	animation: NavPAnimation 0.5s ease;
 	animation-fill-mode: both;
 }
 .HiddenContent a{
 	color: white !important;
 	text-decoration: none !important;
 	outline: none;
-	transition: all 0.5s;
+	transition: all 0.5s ease;
 }
 .HiddenContent a:hover{
 	color: #b7fff0 !important;
@@ -91,7 +89,7 @@ nav{
 	position: absolute;
 	bottom: 10%;
 	left: 50%;
-	margin-left: -40px;
+	margin-left: -40px ;
 }
 .NavAnimationClose{
 	-webkit-animation-name: NavClose; /* Safari 4.0 - 8.0 */
