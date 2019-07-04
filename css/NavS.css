@@ -10,8 +10,6 @@ nav{
 .HiddenContent{
 	position: fixed;
 	background-color: #161815;
-	/* min-height: 100vh; */
-	min-height: -webkit-fill-available;
 	background-image:
 	linear-gradient(
 					rgba(0, 0, 0, 0.3),
