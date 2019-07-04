@@ -19,7 +19,7 @@ nav{
 	background-size:cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	/* height:100vh; */
+	height:100%;
 }
 #myNameFixed{
 	transition: all 0.5s;
