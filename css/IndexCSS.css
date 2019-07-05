@@ -11,6 +11,10 @@ html,body {
 }
 
 /* Section GreatestNerd - CSS*/
+#fullName{
+	color:#4AD295;
+	z-index: 2;
+}
 .Title{
 	position: absolute;
 	top: 30%;
@@ -18,7 +22,6 @@ html,body {
 	color:white;
 	font-size: 5vw;
 	left: 20%;
-
 }
 .SubTitle{
 	position: absolute;
@@ -201,6 +204,17 @@ html,body {
 	color: #193540;
 	padding-bottom: 50px;
 }
+#MySkillsSection h2{
+	text-align: center;
+	margin-top: 90px;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: .2em;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: #193540;
+	padding-bottom: 50px;
+}
 #MySkillsSection h1::before{
 	content: "";
 	position: absolute;
@@ -216,7 +230,7 @@ html,body {
 	height: 80px;
 	width: 80px;
 	border-radius: 120px;
-	margin-bottom: 200px;
+	margin-bottom: 160px;
 }
 
 #MySkillsSection img{
@@ -272,7 +286,124 @@ html,body {
 		font-size: 12px;
 	}
 }
-/*---------------------------ContactMe section CSS-------------------------------*/
+#MySkillsExperienceSection{
+	margin-top: -50px;
+	height: 95%;
+	width: 100%;
+}
+#MySkillsExperienceSection h1{
+	text-align: center;
+	margin-top: 90px;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: .2em;
+	width: 100%;
+
+	color: #193540;
+}
+#MySkillsExperienceSection div .experienceSubTitle{
+	text-align: center;
+	margin: 0 10% 30px 10%;
+	color: #727878;
+}
+
+.Languages ul,.Experience ul{
+	list-style: none !important;
+}
+.Languages li,.Experience li{
+	margin-top: 5px;
+}
+.Experience{
+	transition: all 0.5s;
+}
+.Years{
+	transition: all 0.5s;
+	position: absolute;
+	margin-left: 5px;
+}
+@media only screen and (min-width: 750px){
+	#MySkillsExperienceSection {
+		    padding: 40px 200px;
+	}
+	.Years{
+		width: 100px;
+	}
+}
+@media only screen and (max-width: 749px){
+	.Experience{
+		position: absolute;
+		left: -70px;
+		right: 0;
+	}
+	.Years{
+		width: 150px;
+	}
+}
+/*---------------------------PortfolioSection CSS-------------------------------*/
+
+#PortfolioSection{
+	height: auto;
+	width: 100%;
+}
+#PortfolioSection h1{
+	margin-bottom: 50px;
+}
+@media only screen and (min-width: 750px){
+	#PortfolioSection{
+		margin-top: -80px;
+	}
+	 #PortfolioSection .ProjectImagesL{
+		 height: 300px;
+		 width: 33%;
+		 margin: 0 0 5px 15%;
+	 }
+	 #PortfolioSection .ProjectImagesR{
+		 height: 300px;
+		 width: 33%;
+		 margin: 0 15% 5px 10px;
+	 }
+}
+@media only screen and (max-width: 749px) and (min-width: 600px)  {
+	#PortfolioSection{
+		margin-top: -120px;
+	}
+		#PortfolioSection .ProjectImagesL{
+			height: 300px;
+			width: 45%;
+			margin: 0 0 10px 4%;
+		}
+		#PortfolioSection .ProjectImagesR{
+			height: 300px;
+			width: 45%;
+			margin: 0 4% 10px 10px;
+	}
+}
+@media only screen and (max-width: 599px)  {
+	#PortfolioSection{
+		margin-top: -200px;
+	}
+	#PortfolioSection .ProjectImagesL,	#PortfolioSection .ProjectImagesR{
+			height: 300px;
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 10px;
+		}
+}
+
+#ProjectA{
+    background: url(../Images/Java.jpg) center center/cover;
+}
+#ProjectB{
+	background: url(../Images/ChatServerGUI.png) center center/cover;
+}
+#ProjectC{
+	background: url(../Images/Java.jpg) center center/cover;
+}
+#ProjectD{
+	background: url(../Images/ChatServerGUI.png) center center/cover;
+}
+/*---------------------ContactMe section CSS-------------------------------*/
 #ContactSection{
 	height:auto;
 	width: auto;
