@@ -10,6 +10,10 @@
 	<script src="Javascript/jquery.min.js"></script>
 	<script src="Javascript/JSFunctions.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" charset="UTF-8"/>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
 </head>
 <body>
 
@@ -202,30 +206,44 @@
 </div>
 </section>
 <section id="PortfolioSection">
-		<div class="row">
-		<h1 style="text-align:center;">Projects</h1>
-		<div id="ProjectA"class="ProjectImagesL col-xs-12 col-sm-6">
-
-		</div>
-		<div id="ProjectB" class="ProjectImagesR col-xs-12 col-sm-6">
-
-		</div>
+	<div class="row">
+			<h1 style="text-align:center;">Projects</h1>
+			<span id="GuiPainting"class="ProjectImagesL col-xs-12 col-sm-6">
+					<div class="CircleDescription">
+						<h3>Read More!</h3>
+				</div>
+			</span>
+			<span id="CalendarHTML" class="ProjectImagesR col-xs-12 col-sm-6">
+				<div class="CircleDescription">
+					<h3>Read More!</h3>
+			</div>
+			</span>
 	</div>
 	<div class="row">
-		<div id="ProjectC" class="ProjectImagesL col-xs-12 col-sm-6">
-
+		<span id="SwiftGame" class="ProjectImagesL col-xs-12 col-sm-6">
+			<div class="CircleDescription">
+				<h3>Read More!</h3>
 		</div>
-		<div id="ProjectD" class="ProjectImagesR col-xs-12 col-sm-6">
-
+	</span>
+		<span id="GuiChat" class="ProjectImagesR col-xs-12 col-sm-6">
+			<div class="CircleDescription">
+				<h3>Read More!</h3>
 		</div>
+	</span>
 	</div>
 </section>
+<div class = "modal Image-modal">
+	<div class = "Imagemodal-content" id="LogIn">
+		<p class="Close" onclick="hideModal();"></p>
+	</div>
 
+</div>
 <section id ="ContactSection">
 	<div id="ContactMe">
 		<button id="ContactMeBtn" onclick="toggleContactModal();">Contact me</button>
 		<h1>Hello<span style="background:red; border-radius:25px; position:absolute; height:10px; width:10px; right:-15px; bottom:0;" ></span></h1>
 	</div>
+
 	<div class = "modal bg-modal">
 		<div class = "modal-content" id="LogIn">
 				<h3 style="text-align:center;">Contact Me!</h3>
@@ -235,7 +253,7 @@
 							<p style = "font-size: 12px; color:darkRed; margin-left:70px;"id="ContactMeParagraph">Note:</p>
 						</div>
 						<div class="col-xs-8 col-sm-8 .col-md-8" >
-								<p style = "padding-right:30px; font-size: 10px;"id="ContactMeParagraph">Once I buy my domain, it'll work. Nevertheless, email me at: max.juarez625@gmail.com</p>
+								<p style = "padding-right:30px; font-size: 10px;"id="ContactMeParagraph">Once I buy my domain, it'll work. However, i'm reachable via linked, phone or email: max.juarez625@gmail.com</p>
 						</div>
 					</div>
 
@@ -285,16 +303,7 @@
 	</ul>
 
 </section>
-
-
-
-
-
 <div class="col-xs-6 col-sm-6" id="attributeIcon">Icon made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" style="color:#4AD295;"><strong>Vitaly Gorbachev</strong></a> from <a href="http://www.flaticon.com/"style="color:#4AD295;"><strong>www.flaticon.com</strong></a></div>
 <div class="col-xs-6 col-sm-6" id="attributeIcon">Icon made by <a href="https://www.freepik.com/" style="color:#4AD295;"><strong>freepik</strong></a> from <a href="http://www.flaticon.com/"style="color:#4AD295;" ><strong>www.flaticon.com</strong></a></div>
-<main>
-	<!-- <section id = "Why">
-	</section> -->
-</main>
 </body>
 </html>
