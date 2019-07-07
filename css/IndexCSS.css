@@ -336,31 +336,33 @@ html,body {
 		right: 0;
 	}
 	.Years{
-		width: 150px;
+		width: 60px;
 	}
 }
 /*---------------------------PortfolioSection CSS-------------------------------*/
 
 #PortfolioSection{
 	height: auto;
-	width: 100%;
+	width: 95%;
+	margin-left: 2%;
 }
 #PortfolioSection h1{
 	margin-bottom: 50px;
 }
+
 @media only screen and (min-width: 750px){
 	#PortfolioSection{
 		margin-top: -80px;
 	}
 	 #PortfolioSection .ProjectImagesL{
 		 height: 300px;
-		 width: 33%;
+		 width: 35%;
 		 margin: 0 0 5px 15%;
 	 }
 	 #PortfolioSection .ProjectImagesR{
 		 height: 300px;
 		 width: 33%;
-		 margin: 0 15% 5px 10px;
+		 margin: 0 0 5px 5px;
 	 }
 }
 @media only screen and (max-width: 749px) and (min-width: 600px)  {
@@ -370,12 +372,12 @@ html,body {
 		#PortfolioSection .ProjectImagesL{
 			height: 300px;
 			width: 45%;
-			margin: 0 0 10px 4%;
+			margin: 0 0 5px 4%;
 		}
 		#PortfolioSection .ProjectImagesR{
 			height: 300px;
 			width: 45%;
-			margin: 0 4% 10px 10px;
+			margin: 0 0 5px 5px;
 	}
 }
 @media only screen and (max-width: 599px)  {
@@ -384,24 +386,110 @@ html,body {
 	}
 	#PortfolioSection .ProjectImagesL,	#PortfolioSection .ProjectImagesR{
 			height: 300px;
-			width: 90%;
+			width: 88%;
 			margin-left: 5%;
 			margin-right: 5%;
 			margin-bottom: 10px;
 		}
 }
+#GuiPainting {
+    background: url(../Images/GuiPainting.jpg) center center/cover;
+		opacity: 0.9;
+}
+#CalendarHTML{
+	background: url(../Images/CalendarHTML.png) center center/cover;
+	opacity: 0.9;
 
-#ProjectA{
-    background: url(../Images/Java.jpg) center center/cover;
 }
-#ProjectB{
-	background: url(../Images/ChatServerGUI.png) center center/cover;
+#SwiftGame{
+	background: url(../Images/SwiftProgram.jpg) center center/cover;
+	opacity: 0.9;
 }
-#ProjectC{
-	background: url(../Images/Java.jpg) center center/cover;
+#GuiChat{
+	background: url(../Images/GuiChat.jpg) center center/cover;
+	opacity: 0.9;
+
 }
-#ProjectD{
-	background: url(../Images/ChatServerGUI.png) center center/cover;
+
+#GuiPainting:hover,#CalendarHTML:hover,#SwiftGame:hover,#GuiChat:hover{
+	transition: all 0.5s;
+ }
+ .ImageChanged{
+	 -webkit-animation: imageAnimeOne 0.5s forwards;
+  	animation: imageAnimeOne 0.5s forwards;
+ }
+ .ImageOriginal{
+ 	-webkit-animation: imageAnimeZeroEight 0.5s forwards;
+ 	 animation: imageAnimeZeroEight 0.5s forwards;
+ }
+ @keyframes imageAnimeOne {
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes imageAnimeZeroEight {
+	0%{
+		opacity: 1;
+	}
+ 100%{
+	 opacity: 0.9;
+ }
+}
+
+.CircleDescription{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 50%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	background-color: #293342;
+	border: solid 1px black;
+	height: 100px;
+	width: 100px;
+	border-radius: 250px;
+	cursor: pointer;
+	box-shadow:  0 0 10px 5px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+}
+.CircleDescription h3{
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -10px;
+	font-size: 14px;
+	font-style: verdana;
+	color: white;
+
+}
+.DiscriptionAppear{
+	-webkit-animation: pvisible 0.5s forwards;
+	 animation: pvisible 0.5s forwards;
+}
+.DiscriptionDisappear{
+	-webkit-animation: phidden 0.5s forwards;
+	 animation: phidden 0.5s forwards;
+}
+@keyframes pvisible {
+	100%{
+		opacity: 1;
+		visibility:visible ;
+	}
+}
+@keyframes phidden {
+	100%{
+		opacity: 1;
+		visibility:visible ;
+	}
+	99%{
+		opacity: 0;
+	}
+	100%{
+		visibility:hidden;
+	}
 }
 /*---------------------ContactMe section CSS-------------------------------*/
 #ContactSection{
@@ -452,11 +540,14 @@ html,body {
 	background: #a82047;
 }
 
-@media only screen and (min-width: 531px){
+@media only screen and (min-width: 650px){
 	.bg-modal{
-		height: 100%;
-		width: 100%;
-		background: #00000080;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #000000E6;
 	}
 	#Male{
 		display: none;
@@ -477,7 +568,7 @@ html,body {
 	}
 }
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 650px){
 	.bg-modal{
 		height: 100%;
 		width: 100%;
@@ -494,11 +585,26 @@ html,body {
 		margin: 40px 0 40px 0;
 	}
 	#Male{
+		margin-top: -24px;
 		width: 100px;
 		height: 100px;
 		margin-left: 40%;
 	}
-
+	#ContactMeParagraph{
+		width: 100%;
+		height: 30px;
+	}
+}
+@media only screen and (max-width: 450px){
+	#Male{
+		width: 50px;
+		height: 50px;
+		margin-left: 40%;
+	}
+	#ContactMeParagraph{
+		width: 100%;
+		height: 40px;
+	}
 }
 .ModalAnimationClose{
 	-webkit-animation-name: modalClose; /* Safari 4.0 - 8.0 */
@@ -532,6 +638,7 @@ html,body {
 }
 .Close{
 	position: absolute;
+	z-index: 9;
 	top: 25px;
 	right: 15px;
 	height: 40px;
@@ -542,6 +649,7 @@ html,body {
 	-webkit-user-select: none; /* Chrome/Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
+	background: white;
 }
 
 .Close::before{
@@ -554,12 +662,13 @@ html,body {
 	margin-left: 13px;
 }
 .Close:hover{
-	background-color: #EFF7F7;
+	color: white;
+	background-color: black;
 }
-#ContactMeParagraph{
+/* #ContactMeParagraph{
 	width: 100%;
 	height: 30px;
-}
+} */
 .SubmitAndSave button{
 	position: absolute;
 	width: 100px;
@@ -571,6 +680,7 @@ html,body {
 	outline: none;
 	border: none;
 	left: 50%;
+	bottom: 20px;
 	margin-left: -50px;
 }
 .modal-content div{
@@ -602,8 +712,102 @@ html,body {
 	height: 25px;
 	width: 25px;
 }
+
+.Image-modal #ImageTitle{
+	text-align: center;
+	font-weight: bold;
+	color: 	#a85d8a;
+}
+.Image-modal #UsedLanguages{
+	font-size: 14px;
+	padding-top: 10px;
+	margin-left: 40px;
+	padding-bottom: 15px;
+}
+.Languages,.DescriptionSubTitle{
+	color: #5D8AA8;
+}
+.Image-modal #Description{
+	margin-left: 40px;
+	margin-right: 40px;
+}
 /*---------------------------ContactMe Ends Here-------------------------------*/
 
+
+@media only screen and (min-width: 650px){
+	.Image-modal{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #000000E6;
+	}
+	.Imagemodal-content{
+		position: absolute;
+		border-radius: 10px;
+		top: 15px;
+		left: 50%;
+		margin-left: -275px;
+		width: 550px;
+		height: 600px;
+		background: white;
+	}
+	.Imagemodal-content .your-class img{
+		max-width: 100%;
+		max-height: 350px;
+	}
+	.Imagemodal-content .your-class{
+		width: 100%;
+	}
+	.Imagemodal-content #SmallDescription{
+		position: absolute;
+		width: 100%;
+		top: 360px;
+		bottom: 0;
+	}
+}
+@media only screen and (max-width: 649px){
+	.Imagemodal-content{
+		position: fixed;
+		height: 140%;
+		width: 100%;
+		top:0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: white;
+	}
+	.Imagemodal-content .your-class img{
+		max-width: 90%;
+		max-height: 350px;
+		margin-left: 20px;
+		margin-top: 90px;
+	}
+	.Imagemodal-content .your-class{
+		width: 100%;
+	}
+	.Imagemodal-content #SmallDescription{
+		position: absolute;
+		width: 100%;
+		top: 440px;
+		bottom: 0;
+	}
+}
+@media only screen and (max-width: 500px){
+	.Imagemodal-content #SmallDescription{
+		top: 260px;
+	}
+	.Image-modal #Description, .Image-modal #UsedLanguages{
+		font-size: 12px !important;
+		margin: 10px;
+	}
+	.Imagemodal-content .your-class img{
+		margin-top: 20px;
+		max-width: 90%;
+		max-height: 300px !important;
+	}
+}
 /*---------------------------Footer CSS-------------------------------*/
 #Footer{
 	height:150px;
