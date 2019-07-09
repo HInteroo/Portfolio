@@ -106,9 +106,11 @@ nav{
 }
 
 .HiddenContent p:nth-child(1) { animation-delay: .1s }
-.HiddenContent p:nth-child(2) { animation-delay: .3s }
-.HiddenContent p:nth-child(3) { animation-delay: .5s }
-.HiddenContent p:nth-child(4) { animation-delay: .7s }
+.HiddenContent p:nth-child(2) { animation-delay: .2s }
+.HiddenContent p:nth-child(3) { animation-delay: .3s }
+.HiddenContent p:nth-child(4) { animation-delay: .4s }
+.HiddenContent p:nth-child(5) { animation-delay: .5s }
+.HiddenContent p:nth-child(6) { animation-delay: .6s }
 #navicon{
 	float: right;
 	margin-top: 45px;
