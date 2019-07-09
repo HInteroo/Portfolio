@@ -2,14 +2,13 @@ var showedNav = false;
 var showedModal = false;
 var currentlyAnimating = false;
 var showedImageModal = false;
-var title = ["Java Painting GUI", "Calendar Website", "A Set Game", "Java Chat GUI"];
-var languages = ["Java", "HTML, CSS, Javascript, JQuery, PHP & mySQL", "Swift", "Java"];
+var title = ["Java Painting GUI", "Calendar Website", "First HTML Project", "Java Chat GUI"];
+var languages = ["Java", "HTML, CSS, Javascript, JQuery, PHP & mySQL", "HTML, CSS, Javascript", "Java"];
 var description = ["A painting GUI done using java.awt packages. Allows someone to draw lines, cricles, squares, pentagons, change colors, sizes and allows someone to write text with different font-styles. ",
  		"Developed a calendar in HTML which was done for a part of a website for a non-for-profit organization. Unfortunately, not implemented to the full functional website. Still loved the way it looked and had impress myself with my ability to learn new languages/techniques.",
-  	"Developed a game called 'Set Game' to gain the experience of building my own custom view and handling custom multitouch gestures using Swift programming.",
+  	"My very first HTML project i did right after learning HTML and CSS for a whole week.",
 	 	"A Chat messaging GUI done using java.awt, servers, server threads, sockets, and a chat client. Allows people connect onto a server that's being runned by ChatServer.java and allows people to message to eachother while connected to the server. Allows for private messaging."];
-var idArray = ["GuiPainting", "CalendarHTML", "SwiftGame", "GuiChat"];
-// GuiPainting CalendarHTML SwiftGame GuiChat
+var idArray = ["GuiPainting", "CalendarHTML", "FirstHTML", "GuiChat"];
 function toggleNav(){
 		if (currentlyAnimating) {
 			return;
@@ -85,7 +84,7 @@ function hideModal(){
 $(document).ready(function() {
 	$(".HiddenContent").css('height',''+$(window).height()+'');
 	$("#GreatestNerd").css('height',''+$(window).height()+'');
-	$( "#GuiPainting, #CalendarHTML, #SwiftGame, #GuiChat" ).hover(
+	$( "#GuiPainting, #CalendarHTML, #FirstHTML, #GuiChat" ).hover(
   function() {
 			var self = this;
 			$( self ).addClass( "ImageChanged" );
