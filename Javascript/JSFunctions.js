@@ -9,6 +9,7 @@ var description = ["A painting GUI done using java.awt packages. Allows someone 
   	"My very first HTML project i did right after learning HTML and CSS for a whole week.",
 	 	"A Chat messaging GUI done using java.awt, servers, server threads, sockets, and a chat client. Allows people connect onto a server that's being runned by ChatServer.java and allows people to message to eachother while connected to the server. Allows for private messaging."];
 var idArray = ["GuiPainting", "CalendarHTML", "FirstHTML", "GuiChat"];
+
 function toggleNav(){
 		if (currentlyAnimating) {
 			return;
@@ -81,23 +82,45 @@ function hideModal(){
 	}, 200);
 }
 
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    if ($(window).width() <= 699 && showedNav) {
+      var nav = document.getElementById("nav");
+  		nav.classList.toggle("navtoggle");
+      $(".HiddenContent").removeClass("NavAnimationOpen");
+			$(".HiddenContent").addClass("NavAnimationClose");
+			setTimeout(function() {
+						$(".HiddenNav").hide();
+					}, 700);
+			showedNav = false;
+      $("body").css({
+ 				'overflow':'visible'
+ 			});
+  		}
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 $(document).ready(function() {
 	$(".HiddenContent").css('height',''+$(window).height()+'');
 	$("#GreatestNerd").css('height',''+$(window).height()+'');
 	$( "#GuiPainting, #CalendarHTML, #FirstHTML, #GuiChat" ).hover(
   function() {
 			var self = this;
-			$( self ).addClass( "ImageChanged" );
+			$( self ).addClass("ImageChanged");
 			$( self ).removeClass("ImageOriginal");
 			$( self ).find(".CircleDescription").removeClass("DiscriptionDisappear");
 			setTimeout(function() {
 				$(self).find(".CircleDescription").addClass("DiscriptionAppear");
 			}, 250);
 	  }, function() {
-			$(this).find(".CircleDescription").removeClass( "DiscriptionAppear" );
-			$(this).find(".CircleDescription").addClass( "DiscriptionDisappear" );
-			$( this ).removeClass( "ImageChanged" );
-			$( this ).addClass( "ImageOriginal" );
+			$(this).find(".CircleDescription").removeClass("DiscriptionAppear");
+			$(this).find(".CircleDescription").addClass("DiscriptionDisappear");
+			$(this).removeClass("ImageChanged");
+			$(this).addClass("ImageOriginal");
 	  }
 	);
 $(".CircleDescription").click(function(e) {
@@ -112,16 +135,6 @@ $(".CircleDescription").click(function(e) {
 	$( "#SmallDescription" ).append('<h3 id="ImageTitle">'+title[indexOfId]+'</h3>');
 	$( "#SmallDescription" ).append('<p id="UsedLanguages"><strong class="Languages">Languages Used:</strong> '+languages[indexOfId]+'</p>');
 	$( "#SmallDescription" ).append('<p id="Description"><strong class="DescriptionSubTitle">Description: </strong>'+description[indexOfId]+'</p>');
-	// $( ".your-class" ).append('<div class = "Imgs"><img src="Images/'+id+'/'+id+(i+1)+'.jpg"></img></div>');
-	// $( ".your-class" ).append('<div class = "Imgs"><img src="Images/'+id+'/'+id+(i+1)+'.jpg"></img></div>');
-	// $( ".your-class" ).append('<div class = "Imgs"><img src="Images/'+id+'/'+id+(i+1)+'.jpg"></img></div>');
-	// title languages description
-	// <div id="SmallDescription">
-	// 		<h3 id="ImageTitle">Chat Gui</h3>
-	// 		<p id="UsedLanguages"><strong class="Languages">Languages Used:</strong> Java, Javascript, HTML, CSS</p>
-	// 		<p id="Description"><strong class="DescriptionSubTitle">Description: </strong>A painting GUI done using java.awt packages. Allows someone to draw lines, cricles, squares, pentagons and allows someone to write text.
-	// 		</p>
-	// </div>
 	$('.your-class').slick({
 		dots: true,
 		arrows: true,
