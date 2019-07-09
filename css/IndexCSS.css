@@ -401,8 +401,8 @@ html,body {
 	opacity: 0.9;
 
 }
-#SwiftGame{
-	background: url(../Images/SwiftProgram.jpg) center center/cover;
+#FirstHTML{
+	background: url(../Images/FirstHTML.jpg) center center/cover;
 	opacity: 0.9;
 }
 #GuiChat{
@@ -823,8 +823,8 @@ html,body {
 #Footer ul {
 	position: absolute;
 	left: 50%;
-	margin-left: -150px;
-	width: 300px;
+	margin-left: -80px;
+	width: 160px;
 }
 
 #Footer ul li{
