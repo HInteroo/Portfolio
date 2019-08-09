@@ -641,8 +641,8 @@ html,body {
 	z-index: 9;
 	top: 25px;
 	right: 15px;
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	cursor: pointer;
 	border-radius: 25px;
 	transition: all 0.5s;
@@ -658,8 +658,8 @@ html,body {
 	transform:rotate(45deg);
 	font-weight: bold;
 	content: "+";
-	top: -4px;
-	margin-left: 13px;
+	top: -5px;
+	margin-left: 6px;
 }
 .Close:hover{
 	color: white;
