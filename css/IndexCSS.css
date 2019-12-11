@@ -753,10 +753,13 @@ html,body {
 		width: 550px;
 		height: 600px;
 		background: white;
+		overflow: visible;
 	}
 	.Imagemodal-content .your-class img{
+		padding-left: 20px;
+		margin-top: 20px;
 		max-width: 100%;
-		max-height: 350px;
+		max-height: 320px;
 	}
 	.Imagemodal-content .your-class{
 		width: 100%;
@@ -796,6 +799,9 @@ html,body {
 	}
 }
 @media only screen and (max-width: 500px){
+	.Imagemodal-content{
+		overflow: scroll;
+	}
 	.Imagemodal-content #SmallDescription{
 		top: 260px;
 	}
@@ -811,9 +817,9 @@ html,body {
 }
 /*---------------------------Footer CSS-------------------------------*/
 #Footer{
-	height:150px;
+	height:200px;
 	width: 100%;
-	background-color: #26262a;
+	background-color: black;
 	font-family: adobe-garamond-pro;
 	justify-content: center;
 }
