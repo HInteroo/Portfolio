@@ -54,18 +54,24 @@ nav{
 @keyframes NavOpen {
 	0%{
 		margin-left: -100%;
+		opacity: 0;
+
 	}
 	100%{
 		margin-left: 0;
+		opacity: 1;
+
 
 	}
 }
 @keyframes NavClose {
 	0%{
 		margin-left: 0%;
+		opacity: 1;
 	}
 	100%{
 		margin-left: -100%;
+		opacity: 0;
 	}
 }
 .HiddenContent p{
@@ -100,9 +106,9 @@ nav{
 
 .NavAnimationOpen{
 	-webkit-animation-name: NavOpen; /* Safari 4.0 - 8.0 */
-	animation-duration: 0.5s;
+	animation-duration: 1s;
   animation-name: NavOpen;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 .HiddenContent p:nth-child(1) { animation-delay: .1s }
