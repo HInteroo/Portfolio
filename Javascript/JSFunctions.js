@@ -81,29 +81,6 @@ function hideModal(){
 		});
 	}, 200);
 }
-
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    if ($(window).width() <= 699 && showedNav) {
-      var nav = document.getElementById("nav");
-  		nav.classList.toggle("navtoggle");
-      $(".HiddenContent").removeClass("NavAnimationOpen");
-			$(".HiddenContent").addClass("NavAnimationClose");
-			setTimeout(function() {
-						$(".HiddenNav").hide();
-					}, 700);
-			showedNav = false;
-      $("body").css({
- 				'overflow':'visible'
- 			});
-  		}
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
-
 $(document).ready(function() {
 	$(".HiddenContent").css('height',''+$(window).height()+'');
 	$("#GreatestNerd").css('height',''+$(window).height()+'');
