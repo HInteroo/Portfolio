@@ -753,9 +753,9 @@ html,body {
 		left: 50%;
 		margin-left: -275px;
 		width: 550px;
-		min-height: 600px;
+		height: 600px;
 		background: white;
-		/* overflow: visible; */
+		overflow:hidden;
 	}
 	.Imagemodal-content .your-class img{
 		padding-left: 20px;
@@ -773,19 +773,22 @@ html,body {
 		bottom: 0;
 	}
 }
-@media only screen and (max-width: 649px), screen and (max-height: 625px) {
+@media only screen and (max-width: 621px), screen and (max-height: 625px) {
 	.Imagemodal-content{
 		position: fixed;
 		height: 100%;
-		width: 100%;
+		width: 100% !important;
 		margin-left: 0 !important;
 		max-height: 625px !important;
-
 		top:0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		background: white;
+		overflow-y: auto;
+	}
+	.slick-list {
+	    margin: 0 20% 0 20% !important;
 	}
 	.Imagemodal-content .your-class img{
 		max-width: 90%;
@@ -800,11 +803,13 @@ html,body {
 		position: absolute;
 		width: 100%;
 		top: 400px;
-		bottom: 0;
+		/* bottom: 0; */
 	}
 }
-@media only screen and (max-width: 470px){
-
+@media only screen and (max-width: 620px){
+	.slick-list {
+	    margin: 0 10% 0 10% !important;
+	}
 	.Imagemodal-content #SmallDescription{
 		top: 260px;
 	}
