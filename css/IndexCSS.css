@@ -733,7 +733,9 @@ html,body {
 	margin-right: 40px;
 }
 /*---------------------------ContactMe Ends Here-------------------------------*/
-
+	.Imagemodal-content{
+		overflow: scroll;
+	}
 
 @media only screen and (min-width: 650px){
 	.Image-modal{
@@ -751,9 +753,9 @@ html,body {
 		left: 50%;
 		margin-left: -275px;
 		width: 550px;
-		height: 600px;
+		min-height: 600px;
 		background: white;
-		overflow: visible;
+		/* overflow: visible; */
 	}
 	.Imagemodal-content .your-class img{
 		padding-left: 20px;
@@ -771,11 +773,14 @@ html,body {
 		bottom: 0;
 	}
 }
-@media only screen and (max-width: 649px){
+@media only screen and (max-width: 649px), screen and (max-height: 625px) {
 	.Imagemodal-content{
 		position: fixed;
-		height: 140%;
+		height: 100%;
 		width: 100%;
+		margin-left: 0 !important;
+		max-height: 625px !important;
+
 		top:0;
 		left: 0;
 		right: 0;
@@ -794,14 +799,12 @@ html,body {
 	.Imagemodal-content #SmallDescription{
 		position: absolute;
 		width: 100%;
-		top: 440px;
+		top: 400px;
 		bottom: 0;
 	}
 }
-@media only screen and (max-width: 500px){
-	.Imagemodal-content{
-		overflow: scroll;
-	}
+@media only screen and (max-width: 470px){
+
 	.Imagemodal-content #SmallDescription{
 		top: 260px;
 	}
