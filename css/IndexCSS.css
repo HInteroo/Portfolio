@@ -117,7 +117,8 @@ html,body {
 }
 /* ------------------------------------------------------- */
 #AboutMeSection{
-	height:570px;
+/* 	height:570px; */
+	height:130%;
 	width: 100%;
 }
 #AboutMeTitle{
