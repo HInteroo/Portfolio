@@ -123,6 +123,18 @@ $(document).ready(function() {
 			$(this).addClass("ImageOriginal");
 	  }
 	);
+  if ($(window).width() >767) {
+    if($('#SmallBGPicture video source').attr('src') != 'CityGifVertical.mp4'){
+      $( "#SmallBGPicture video source" ).attr('src', 'CityGifVertical.mp4' );
+      $("#SmallBGPicture video")[0].load();
+    }
+ }
+   else {
+     if($('#SmallBGPicture video source').attr('src') != 'CityGifHorizontal.mp4'){
+       $( "#SmallBGPicture video source" ).attr('src', 'CityGifHorizontal.mp4' );
+       $("#SmallBGPicture video")[0].load();
+     }
+   }
 $(".CircleDescription").click(function(e) {
 	showedImageModal = true;
 	$( ".Imagemodal-content" ).append('<div class = "your-class"></div>');
