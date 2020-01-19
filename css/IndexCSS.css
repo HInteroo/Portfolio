@@ -201,8 +201,9 @@ html,body {
 
 	.loopedGifCity{
 		width: 100%;
-		margin-top: 20px;
-		height:20vh;
+		margin-top: 10px;
+		height:40vh;
+		margin-left: 10px;
 	}
 }
 /*------------------------------------------------------------------*/
