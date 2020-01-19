@@ -81,6 +81,29 @@ function hideModal(){
 		});
 	}, 200);
 }
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    if ($(window).width() <= 699 && showedNav) {
+      var nav = document.getElementById("nav");
+  		nav.classList.toggle("navtoggle");
+      $(".HiddenContent").removeClass("NavAnimationOpen");
+			$(".HiddenContent").addClass("NavAnimationClose");
+			setTimeout(function() {
+						$(".HiddenNav").hide();
+					}, 700);
+			showedNav = false;
+      $("body").css({
+ 				'overflow':'visible'
+ 			});
+  		}
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 $(document).ready(function() {
 	$(".HiddenContent").css('height',''+$(window).height()+'');
 	$("#GreatestNerd").css('height',''+$(window).height()+'');
@@ -145,6 +168,21 @@ $(".CircleDescription").click(function(e) {
  			});
  		}
 	})
+
+    $(window).resize(function(){
+      if ($(window).width() >767) {
+        if($('#SmallBGPicture video source').attr('src') != 'CityGifVertical.mp4'){
+          $( "#SmallBGPicture video source" ).attr('src', 'CityGifVertical.mp4' );
+          $("#SmallBGPicture video")[0].load();
+        }
+     }
+       else {
+         if($('#SmallBGPicture video source').attr('src') != 'CityGifHorizontal.mp4'){
+           $( "#SmallBGPicture video source" ).attr('src', 'CityGifHorizontal.mp4' );
+           $("#SmallBGPicture video")[0].load();
+         }
+       }
+    })
 $(window).scroll(function(e){
 		if (($(this).scrollTop() > $("#AboutMeSection").offset().top - 70)){
 			 $("#myNameFixed").css('color','#4AD295');
