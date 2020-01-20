@@ -203,7 +203,7 @@ html,body {
 		width: 100%;
 		margin-top: 10px;
 		height:40vh;
-		margin-left: 10px;
+		/* margin-left: 10px; */
 	}
 }
 /*------------------------------------------------------------------*/
@@ -362,7 +362,6 @@ html,body {
 #PortfolioSection{
 	height: auto;
 	width: 95%;
-	margin-left: 2%;
 }
 #PortfolioSection h1{
 	margin-bottom: 50px;
@@ -386,6 +385,7 @@ html,body {
 @media only screen and (max-width: 749px) and (min-width: 600px)  {
 	#PortfolioSection{
 		margin-top: -120px;
+		padding: 0 0 5px 0
 	}
 		#PortfolioSection .ProjectImagesL{
 			height: 300px;
@@ -404,10 +404,8 @@ html,body {
 	}
 	#PortfolioSection .ProjectImagesL,	#PortfolioSection .ProjectImagesR{
 			height: 300px;
-			width: 88%;
-			margin-left: 5%;
-			margin-right: 5%;
-			margin-bottom: 10px;
+			width: 90%;
+			margin: 0 0 10px 8%;
 		}
 }
 #GuiPainting {
