@@ -127,12 +127,14 @@ $(document).ready(function() {
     if($('#SmallBGPicture video source').attr('src') != 'CityGifVertical.mp4'){
       $( "#SmallBGPicture video source" ).attr('src', 'CityGifVertical.mp4' );
       $("#SmallBGPicture video")[0].load();
+      $("#SmallBGPicture video")[0].play();
     }
  }
    else {
      if($('#SmallBGPicture video source').attr('src') != 'CityGifHorizontal.mp4'){
        $( "#SmallBGPicture video source" ).attr('src', 'CityGifHorizontal.mp4' );
        $("#SmallBGPicture video")[0].load();
+       $("#SmallBGPicture video")[0].play();
      }
    }
 $(".CircleDescription").click(function(e) {
