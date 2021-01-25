@@ -657,8 +657,8 @@ html,body {
 	z-index: 9;
 	top: 25px;
 	right: 15px;
-	height: 40px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
 	cursor: pointer;
 	border-radius: 25px;
 	transition: all 0.5s;
@@ -675,11 +675,11 @@ html,body {
 	font-weight: bold;
 	content: "+";
 	top: -4px;
-	margin-left: 13px;
+	margin-left: 8px;
 }
 .Close:hover{
-	color: white;
-	background-color: black;
+	color: #658a9c;
+	/* background-color: #616161; */
 }
 /* #ContactMeParagraph{
 	width: 100%;
